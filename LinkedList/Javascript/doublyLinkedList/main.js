@@ -1,3 +1,8 @@
+/*
+    implementation of doubly linked list in javascript using class
+*/
+
+// class to create a node for doubly linked list
 class Node {
     constructor(value) {
         this.value = value;
@@ -6,13 +11,15 @@ class Node {
     }
 }
 
+// doubly linked list operations
 class DoublyLinkedList {
     constructor(){
         this.first = null;
         this.last = null;
         this.size = 0;
     }
-    
+
+    //to insert nodes into last of the doubly linked list
     append(value){
         const newNode = new Node(value);
         if(!this.first){
@@ -27,6 +34,7 @@ class DoublyLinkedList {
         this.size++;
     }
 
+    //to insert nodes into first of the doubly linked list
     prepend(value){
         const newNode = new Node(value);
         if(!this.first){
@@ -41,6 +49,7 @@ class DoublyLinkedList {
         this.size++;
     }
 
+    //will return the particular indexed node in the doubly linked list
     get(index) {
         if(index<=0 || index>this.size) return null;
         else {
@@ -52,6 +61,7 @@ class DoublyLinkedList {
         }
     }
     
+    //to insert nodes into given index of the doubly linked list
     insert(ind,val) {
         let prevNode = this.get(ind-1);
         if(prevNode){
@@ -68,6 +78,7 @@ class DoublyLinkedList {
 
 const list = new DoublyLinkedList();
 
+//sample operations
 list.append("four");
 list.prepend("one");
 list.insert(2,"three");
