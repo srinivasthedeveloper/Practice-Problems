@@ -8,14 +8,14 @@ class parent{
     }
 };
 
-class child1 : public parent{
+class child1 : public parent{  //child1 class created that inherits properties from parent class
     public:
     void display(){
         cout<<"Child1 class display method...."<<endl;
     }
 };
 
-class child2 : public child1{
+class child2 : public child1{   //child2 class created that inherits properties from parent class
     public:
     void display(){
         cout<<"Child2 class display method...."<<endl;
@@ -30,7 +30,7 @@ int main(){
    parent *ptr[len];
    
    cout<<"Enter your choice: \n 1. Parent \n 2. Child1 \n 3. Child2"<<endl;
-   for(i=0;i<len;i++){
+   for(i=0;i<len;i++){    //loop created to check for choice
        cout<<"Which class object to be created? : " <<endl;
        cin>>choice; 
        if(choice==1){

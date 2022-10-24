@@ -7,6 +7,7 @@
 # Input: nums = [7,8,9,11,12]
 # Output: 1
 
+"BRIEF METHOD"
 def firstMissingPositive(nums: list) -> int:
     maximum=1
     numset=set(nums)
@@ -22,3 +23,10 @@ if __name__ == '__main__':
     c = firstMissingPositive([7,8,9,11,12])
     print(c)
 
+"short hand solution"
+array = set(eval(input()))
+#to handle input like this [1,2,3] (eval will convert the string into respective datatype)
+([(print(i),exit()) for i in range(1,len(array)+1)if(i not in array)])
+#the above loop will iterate from 1 to total number of unique elements in the list
+# it will invoke the (print(i),exit()) part if the i not present in the list
+# exit() will break the loop after printing the missed element

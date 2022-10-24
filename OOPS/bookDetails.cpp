@@ -13,26 +13,26 @@ class book{
     float price;
     string s;
     public:
-    void setPage(int p){
+    void setPage(int p){   //setter defined to set page
         page=p;
     }
-     void setPrice(float pr){
+     void setPrice(float pr){   //setter defined to set price
         price=pr;
     }
      void setName(string name){
          s = name;      //strcpy for char datatype can be used.
     }
-     int getPage(){
+     int getPage(){      //getter defined to get the page
          cout<<"Page numbers are: "<<page<<endl;
          return 0;
          
      }
-     float getPrice(){
+     float getPrice(){    //getter defined to get the price
         
          return price;
         
      }
-     string getName(){
+     string getName(){     //getter defined to get the name
          return s;
      }
     

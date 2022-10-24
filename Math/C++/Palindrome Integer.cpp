@@ -19,13 +19,13 @@
 
 int Solution::isPalindrome(int A) {
     
-    int rev,sum=0;
-    int temp = A;
+    int rev,sum=0; //rev and sum are first intialized with 0
+    int temp = A; //temp contains the integer
     
-    while(A>0){
-       rev=A%10;
-        A=A/10;
-       sum=sum*10+rev;
+    while(A>0){ //loop is executed till the given integer is non-zero
+       rev=A%10; //rev is updated to store the remainder
+        A=A/10; //the integer is now updated to store the value left after division
+       sum=sum*10+rev; //sum is updated to get the reverse of the number 
      
        
     }

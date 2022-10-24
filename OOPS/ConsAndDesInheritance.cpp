@@ -8,21 +8,21 @@ using namespace std;
 
 class parent{
     public:
-  parent(){
+  parent(){     //parent constructor is created here
       cout<<"Parent constructor called"<<endl;
   }  
   
-  ~parent(){
+  ~parent(){     //parent destructor is created here
       cout<<"Parent destructor called"<<endl;
   }
 };
 
-class child: public parent{
+class child: public parent{   //child class is created that inherits properties from parent class
     public:
-    child(){
+    child(){          //child constructor is created here
         cout<<"Constructor of child called"<<endl;
     }
-    ~child(){
+    ~child(){          //child destructor is created here
         cout<<"Destructor of child called"<<endl;
     }
     
@@ -30,6 +30,6 @@ class child: public parent{
 
 int main()
 {
-    child c;
+    child c;    //object for child class is created
     return 0;
 }

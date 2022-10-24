@@ -22,11 +22,11 @@ int main()
           cin>>a;
           cin>>b;
           
-          if(a<b){
+          if(a<b){ //condition if a is greater than b then they should be swapped
           swap(a,b);
       }
     
-    if(a > 2*b || (a+b)%3 != 0){
+    if(a > 2*b || (a+b)%3 != 0){ //condition to find out about the empty piles
         cout<<"NO"<<endl;
     }else{
         cout<<"YES"<<endl;

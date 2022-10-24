@@ -26,7 +26,7 @@ public:
     int findPeakElement(vector<int>& nums) {
         int lo = 0, hi = nums.size()-1, mid;
 
-        while (lo < hi) {
+        while (lo < hi) {  //the condition terminates when lo and hi becomes equal
             mid = lo + (hi - lo) / 2;
             if (nums[mid] < nums[mid + 1])
                 lo = mid + 1;

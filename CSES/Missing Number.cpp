@@ -14,10 +14,10 @@ int main()
     
     for(int i=0;i<n-1;i++){
         cin>>input;
-        sum+=input;
+        sum+=input; //sum of all elements is calculated and stored in sum variable
     }
     
-    cout<< (n*(n+1))/2 - sum <<endl;
+    cout<< (n*(n+1))/2 - sum <<endl; //adding the whole sum and subtracting the value of 'sum' variable will give the missing number
     
 
     return 0;

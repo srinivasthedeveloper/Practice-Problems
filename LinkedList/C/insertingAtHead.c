@@ -1,21 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node{
+struct Node{  //code to define the node of linked list
     int data;
     struct Node * next;
 };
 
 struct Node * insertionAtHead(struct Node * head, int ele){
     struct Node * ptr = (struct Node *)malloc(sizeof(struct Node));
-    ptr->data = ele;
-    ptr->next = head;
+    ptr->data = ele; //pointer pointing to data stores the element
+    ptr->next = head; //pointer pointing to the head of the node
     head = ptr;
     return(head);
 }
 
 void llTraversal(struct Node * head){
-    while(head != NULL){
+    while(head != NULL){  
         printf("%d\n", head->data);
         head = head->next;
     }

@@ -56,14 +56,14 @@
     int sum=0;
     
     for(int i=0; i<A.size();i++){
-        maxi = max(maxi,A[i]);
+        maxi = max(maxi,A[i]); //maximun value will be updated here
     }
     
     for(int i=0; i<A.size();i++){
-        mini = min(mini,A[i]);
+        mini = min(mini,A[i]); //minimum value will be updated here
     }
     
-    sum= maxi+mini;
+    sum= maxi+mini; //sum of maximum and minimum element of is calculated and stored
     return sum;
     
 }

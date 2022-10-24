@@ -17,7 +17,7 @@ int Solution::firstMissingPositive(vector<int> &A) {
     int missing =1;
     
     for(int i=0; i<A.size();i++){
-        if(A[i]==missing){
+        if(A[i]==missing){ //loop will run until thr missing element matches with the element of array
             missing++;
         }else if(A[i]>0) break;
     }

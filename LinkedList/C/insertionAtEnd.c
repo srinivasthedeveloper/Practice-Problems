@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node{
+struct Node{ //creating a node
     int data;
     struct Node * next;
 };
 
 struct Node * insertionAtEnd(struct Node * head, int ele){
     struct Node * ptr = (struct Node *)malloc(sizeof(struct Node));
-    ptr->data = ele;
-    ptr->next = NULL;
+    ptr->data = ele;//pointer pointing to the element
+    ptr->next = NULL;//pointing to null
     struct Node *p = head;
     while(p->next != NULL){
         p = p->next;
@@ -29,9 +29,9 @@ int main(){
     struct Node *head, *second, *third;
     int ele;
 
-    head = (struct Node *)malloc(sizeof(struct Node));
-    second = (struct Node *)malloc(sizeof(struct Node));
-    third = (struct Node *)malloc(sizeof(struct Node));
+    head = (struct Node *)malloc(sizeof(struct Node));    //defining head node
+    second = (struct Node *)malloc(sizeof(struct Node));  //defining second node
+    third = (struct Node *)malloc(sizeof(struct Node));   //defining third node
 
     head->data = 12;
     head->next = second;

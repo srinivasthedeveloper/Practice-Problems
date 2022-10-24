@@ -51,17 +51,17 @@
 
 int Solution::reverse(int A) {
    int negflag=0;
-if(A<0)
+if(A<0) //for negative integers this condition is checked
 {
-negflag=1;
+negflag=1; 
 A = A*-1;
 }
 long int ret=0;
-while(A!=0)
+while(A!=0) //for positive integers and zero this condition is checked
 {
-ret = ret*10 + A%10;
+ret = ret*10 + A%10; 
 A = A/10;
-if(ret<INT_MIN || ret>INT_MAX)
+if(ret<INT_MIN || ret>INT_MAX) 
 {
 ret=0;
 break;

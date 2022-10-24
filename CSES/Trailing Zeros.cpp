@@ -16,12 +16,12 @@ int main()
     long n, current=5, sum=0;
     cin>>n;
     
-    while(current<=n){
-        sum += n/current;
-        current *= 5;
+    while(current<=n){ //loop continues till current is less than or equal to n
+        sum += n/current; //sum is updated by adding previous sum and the ratio of n divided by the current value
+        current *= 5; //current is updated by multiplying each it everytime by 5
     }
     
-    cout<<sum;
+    cout<<sum; //sum is returned
 
     
 

@@ -13,15 +13,15 @@ int main ()
     cin>>n;
     long long int a[n];
     
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){ //code to input the array of n length
         cin>>a[i];
     }
     
     for(int i=1; i<n;i++){
-        if(a[i]<a[i-1]){
-            count = a[i-1]-a[i];
-            a[i] = count + a[i];
-            answer+=count;
+        if(a[i]<a[i-1]){  //condition to check whether the element is less than to the next element in the array
+            count = a[i-1]-a[i]; //difference between the elements is stored in count
+            a[i] = count + a[i]; //ith element is updated by adding the count in it
+            answer+=count; //answer variable is updated by adding the value of count in it
             count=0;
         }
     }

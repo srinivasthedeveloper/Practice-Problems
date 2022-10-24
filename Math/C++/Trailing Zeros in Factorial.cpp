@@ -54,7 +54,7 @@
  int Solution::trailingZeroes(int A) {
     int ans=0;
     for(int i=5; i<=A; i=i*5){
-        ans += A/i;
+        ans += A/i; //ans variable is updated by adding previous ans to the ratio of value obtained from A divided by i
     }
     return ans;
 }

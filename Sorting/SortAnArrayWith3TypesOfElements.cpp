@@ -5,14 +5,13 @@ void sort(int arr[], int n)
 {
     int temp[n], i=0;
     for(int j=0; j<n; j++)
-      if(arr[j]==0){ temp[i]= arr[j]; i++; }
+      if(arr[j]==0){ temp[i]= arr[j]; i++; } //for 0th index having 0 then store that value in temp
 
     for(int j=0; j<n; j++)
-      if(arr[j]==1){ temp[i]==arr[j]; i++;} 
+      if(arr[j]==1){ temp[i]==arr[j]; i++;} //for 0th index having 1 then store that value in temp
 
     for(int j=0; j<n; j++)   
-       if(arr[j]==2){ temp[i]= arr[j]; i++;}
-
+       if(arr[j]==2){ temp[i]= arr[j]; i++;}//for 0th index having 2 then store that value in temp
     for(int j=0; j<n; j++)
        arr[j]= temp[j];     
 }
@@ -31,15 +30,15 @@ void sort(int arr[], int n)
     {
         if(arr[mid]==0)
         {
-            swap(arr[low], arr[mid]);
+            swap(arr[low], arr[mid]); //sorting all the 0's at one side
             low++;
             mid++;
         }
 
-        else if(arr[mid]==1)
+        else if(arr[mid]==1)   //sorting all the 1's after zeros
            mid++;
         else{
-            swap(arr[mid], arr[hi]);
+            swap(arr[mid], arr[hi]);  //sorting all the 2's after 0 and 1
         }   hi--;
     }
 }

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class parent{
+class parent{  //parent class created
     private:
     int a;
     public:
@@ -18,7 +18,7 @@ void parent:: displayParent(){
     cout<<"The value of a in parent is: "<<a<<endl;
 }
 
-class child1{
+class child1{   //child1 class created 
     private:
     int b;
     public:
@@ -36,7 +36,7 @@ void child1:: displayChild1(){
 }
 
 
-class child2 : public parent, public child1{
+class child2 : public parent, public child1{  //child2 class inherits properties from child1 and parent class 
     public:
     void displayChild2(){
     displayParent();

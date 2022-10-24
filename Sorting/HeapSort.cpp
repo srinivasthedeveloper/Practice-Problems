@@ -6,18 +6,18 @@ void heapify(int a[], int n, int i)
 
     if(l<=n && a[l] > a[largest])
     {
-        largest=l;
+        largest=l; //if largest variable has value less than the element at lth index then make largest equal to l
     }
 
     if(r<=n && a[r] > a[largest])
     {
-        largest=r;
+        largest=r; //if largest variable has value less than the element at rth index then make largest equal to r
     }
 
-    if(largest !=i)
+    if(largest !=i) //when largest is not equal to i
     {
         swap(a, i, largest);
-        heapify(a,n,largest);
+        heapify(a,n,largest); 
 
     }
 }

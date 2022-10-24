@@ -18,6 +18,13 @@ void parent:: displayParent(){
     cout<<"The value of a in parent is: "<<a<<endl;
 }
 
+//multilevel inheritance 
+
+//child1 inherits properties from parent class
+
+//child2 inherits properties from child1 class
+
+
 class child1 : public parent{
     private:
     int b;

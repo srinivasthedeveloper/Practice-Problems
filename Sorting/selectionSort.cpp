@@ -27,12 +27,12 @@ void selectSort(arr,n)
 {
     for(i=0;i<n-1;i++)
     {
-        min_ind=i;
+        min_ind=i;   
         for(int j=i+1;i<n;j++)
-            if(arr[j]<arr[min_ind])
+            if(arr[j]<arr[min_ind])    //value at (i+1)th index is less than the ith index in the array then min_ind will store i+1 value
                min_ind=j;
 
 
-      swap(arr[min_ind],arr[i]);         
+      swap(arr[min_ind],arr[i]);        //(i+1)th and ith values are swapped  
     }
 }

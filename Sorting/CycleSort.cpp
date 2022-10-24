@@ -12,24 +12,24 @@ void cycleSortDistinct()
 {
     for(int cs=0; cs<n-1; cs++)
     {
-        int item= arr[cs];
-        int pos =cs;
-        for(int i= cs+1; i<n ; i++)
+        int item= arr[cs]; //as the loop continues item will store values from 0 till n-1
+        int pos =cs; //contains values from 0 to n-1 till the condition for loop is true
+        for(int i= cs+1; i<n ; i++) 
         {
-              if(arr[i] < item)
+              if(arr[i] < item) //ith element of array is less than the item values then position is incremented by 1
                 pos++;     
         }
 
-        swap(item, arr[pos]);
+        swap(item, arr[pos]); //when the inner loop terminates the item and element present at the positions will get swapped
 
-        while(pos != cs)
+        while(pos != cs)   //this will continue till the position is not eqaul to the cs
         {
-            pos= cs;
+            pos= cs; //since they are unequal,so first they are made eqaul in the loop
             for(int i = cs+1; i<n ; i++)
                if(arr[i] < item)
                  pos++;
 
-            swap(item, arr[pos]);     
+            swap(item, arr[pos]);      //swapping the two elements
         }
     }
 }

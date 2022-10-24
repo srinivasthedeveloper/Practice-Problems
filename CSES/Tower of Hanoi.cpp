@@ -12,10 +12,10 @@ Your task is to find a solution that minimizes the number of moves.*/
 
 using namespace std;
 
-int toh(int n){
-    if(n==0){
+int toh(int n){ //recursive program 
+    if(n==0){ //base case if n is zero then return zero
         return 0;
-    }
+    } //else return the below value
     return toh(n-1)+1+toh(n-1);
 }
 

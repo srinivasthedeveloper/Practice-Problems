@@ -11,7 +11,7 @@ int main() {
 
     cout << 0 << endl;
     for (long long i = 2 ; i <= n ; i++) {
-      cout << ((i * i) * (i * i - 1) / 2 - (4 * (i - 2) * (i - 1))) << endl;
+      cout << ((i * i) * (i * i - 1) / 2 - (4 * (i - 2) * (i - 1))) << endl; //code to find total number of non attacking ways
     }
 
     return 0;

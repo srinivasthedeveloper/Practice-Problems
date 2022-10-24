@@ -15,9 +15,9 @@ int main()
     int n,answer=1;
     cin>>n;
     
-    for(int i=1;i<=n;i++){
-        answer*=2;
-        answer %= MOD;
+    for(int i=1;i<=n;i++){ //loop will go from 1 to length entered by the user
+        answer*=2;  //answer is multiplied by 2 and updated
+        answer %= MOD; //remainder is stored in ans 
     }
     
     cout<<answer;

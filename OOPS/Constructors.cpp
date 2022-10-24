@@ -17,16 +17,16 @@ class Test{
   Test(int num){  //parametrised constructor
       n=num;
   }
-  void display(){
+  void display(){   //construcutor created to display the value of n
       cout<<"Value of n: "<<n<<endl;
   }
 };
 
 int main()
 {
-   Test t1;
-   Test t2(20);
-   t1.display();
+   Test t1;     //object t1 is created
+   Test t2(20);   //object t2 is created with parameter 20 is passed
+   t1.display();  
    t2.display();
 
     return 0;

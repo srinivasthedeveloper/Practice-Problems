@@ -13,17 +13,17 @@ int main()
     int n;
    cin>>n;
    
-   if(n==2 || n==3){
+   if(n==2 || n==3){  //if n i 2 or 3 then 'no solution' is returned
        cout<<"NO SOLUTION"<<endl;
    }
    
    for(int i=1;i<=n;i++){
-       if(i%2 == 0)
+       if(i%2 == 0) //if i is divisible by 2 then i is printed back
        cout<<i<<" ";
    }
    
    for(int i=1;i<=n;i++){
-       if(i%2 != 0)
+       if(i%2 != 0) //if i is not divisible by 2 then i is printed back in this loop
        cout<<i<<" ";
    }
    

@@ -49,9 +49,9 @@ vector<int> Solution::solve(vector<int> &A) {
     vector<int> v;
     
     for(int i=0; i<A.size();i++){
-        v.push_back(A[i]*A[i]);
+        v.push_back(A[i]*A[i]); //squared values are calculated and re-entered in the array
     }
     
-    sort(v.begin(),v.end());
+    sort(v.begin(),v.end()); //the new values are sorted in decreasing order
     return v;
 }

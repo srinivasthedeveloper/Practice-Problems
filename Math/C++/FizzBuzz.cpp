@@ -17,18 +17,18 @@
 
 vector<string> Solution::fizzBuzz(int A) {
     vector<string> v;
-    for(int i=1; i<=A;i++){
-        if((i%3==0) && (i%5==0))
-        v.push_back("FizzBuzz");
-        else if(i%3==0)
-        v.push_back("Fizz");
-        else if(i%5==0)
-        v.push_back("Buzz");
-        else{
+    for(int i=1; i<=A;i++){ //loop will go from 1 to the length of array
+        if((i%3==0) && (i%5==0)) //condition to check whether it is divisible by both 3 and 5
+        v.push_back("FizzBuzz"); //if condition is true then fizzbuzz is pushed back
+        else if(i%3==0) //for above condition is false then divisibility by 3 is checked
+        v.push_back("Fizz"); //if true then Fizz is pushed back
+        else if(i%5==0)//for above condition is false then divisibility by 5 is checked
+        v.push_back("Buzz"); //if this is true then Buzz is pushed back
+        else{  //if not any of the above condition is true then i is converted from integer to  string and pushed back
             string str = to_string(i);
             v.push_back(str);
         }
         
     }
-    return v;
+    return v; //the final output is returned after the loop gets terminated
 }

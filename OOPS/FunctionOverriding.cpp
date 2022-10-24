@@ -5,7 +5,7 @@ class parent{
     private:
     int a;
     public:
-    void display(){
+    void display(){  
         cout<<"Parent class display method...."<<endl;
     }
 };
@@ -14,7 +14,7 @@ class child : public parent{
     private:
     int b;
     public:
-    void display(){
+    void display(){   //function display is overrided here
         parent::display();
         cout<<"Child class display method...."<<endl;
     }

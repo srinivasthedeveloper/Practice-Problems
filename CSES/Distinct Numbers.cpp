@@ -9,17 +9,17 @@ int main()
     cin >> n;
     vector<int> ans(n);
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) // code to input the array from the user
     {
         cin >> ans[i];
     }
 
-    sort(ans.begin(), ans.end());
+    sort(ans.begin(), ans.end()); //sorting the array
 
     for (int i = 1; i <= n; i++)
     {
-        if (ans[i] != ans[i - 1])
-            count++;
+        if (ans[i] != ans[i - 1]) //condition to check if ith and (i-1)th index are distinct or not
+            count++; //if they are distinct then count is increased by 1
     }
-    cout << count << endl;
+    cout << count << endl; //count is printed back
 }

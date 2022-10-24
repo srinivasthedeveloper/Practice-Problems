@@ -5,7 +5,7 @@ int getMinDiff(int arr[], int n)
     int res= INT_MAX;
     for(int i=1; i<n; i++)
          for(int j=0;j<i;j++)
-            res= min(res, (abs[i]- abs[j]));
+            res= min(res, (abs[i]- abs[j]));  //minimum is found out between res and difference between the elements present at the ith index and jth index
 
     return res;        
 
@@ -26,7 +26,7 @@ int getMinDiff(int arr[], int n)
     int res= INT_MAX;
 
     for(int i=1; i<n; i++)
-       res= min(res, arr[i] - arr[i-1]);
+       res= min(res, arr[i] - arr[i-1]); //minimum is found out between res and difference between the elements present at the ith index and (i-1)th index
 
     return res;   
 

@@ -20,17 +20,18 @@ int main()
 
     cout << n << " ";
 
-    while (n != 1)
+    while (n != 1) //the loop is repeated till the value of n becomes 1
     {
-
-        if (n % 2 == 0)
+        //if n is even
+        if (n % 2 == 0)  //n is divisible by 2
         {
-            n = n / 2;
+            n = n / 2; //n is divided by 2 if it is even
             cout << n << " ";
         }
+        //if n is odd
         else
         {
-            n = (n * 3) + 1;
+            n = (n * 3) + 1; //n is multiplied by 3 and 1 is added
             cout << n << " ";
         }
     }
